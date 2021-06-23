@@ -1,0 +1,78 @@
+#top, #bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 50%;
+}
+
+#top {
+    top:0;
+    background-color: #40e9ff;
+}
+
+#bottom {
+    bottom: 0;
+    background-color: white;
+}
+
+#title {
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+
+#timerBox {
+    position: absolute;
+    top: 45%;
+    left: 37%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+#hours, #minutes, #seconds {
+    height: 170px;
+    width: 120px;
+    font-size: 96px;
+    padding-left: 3px;
+    border-radius: 10px;
+    transform: scale(0.9, 1.0);
+    margin: 0px 10px 0px 10px;
+}
+
+#colon {
+    font-size: 100px;
+    position: relative;
+    top: -12px;
+}
+
+label {
+    position: absolute;
+    top: 180px;
+    font-size: 40px;
+}
+
+#hoursLabel {
+    left: 25px;
+}
+
+#minutesLabel {
+    left: 195px;
+}
+
+#secondsLabel {
+    left: 380px;
+}
+
+#start {
+    position: absolute;
+    top: 300px;
+    left: 185px;
+    font-size: 30px;
+    padding: 5px 7px 5px 7px;
+    border-radius: 5px;
+}
+
+#start:hover {
+    background-color: beige;
+}
