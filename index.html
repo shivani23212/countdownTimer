@@ -10,17 +10,26 @@
     <body>
         <div id="top">
             <h1 id="title">Countdown Timer</h1>
+
         </div>
-        <div id="bottom"></div>
+        <div id="bottom"></div>            
+        
+        <div class="toggle-container">
+            <div class="toggle-btn" onclick="toggleMe()">
+                <div class="inner-circle"></div>
+            </div>
+        </div>
 
+
+        <!-- countdown -->
         <div id="timerBox">
-            <span><input type="number" min="0" max="23" step="1" id="hours"></span>
+            <span><input type="number" min="0" max="23" step="1" id="hours" placeholder="00"></span>
             <span id="colon">:</span>
 
-            <span><input type="number" min="0" max="59" step="1" id="minutes"></span>
+            <span><input type="number" min="0" max="59" step="1" id="minutes" placeholder="00"></span>
             <span id="colon">:</span>
 
-            <span><input type="number" min="0" max="59" step="1" id="seconds"></span>
+            <span><input type="number" min="0" max="59" step="1" id="seconds" placeholder="00"></span>
 
             <label id="hoursLabel">Hours</label>
             <label id="minutesLabel">Minutes</label>
@@ -28,6 +37,18 @@
 
             <button id="start">Start Timer</button>
         </div>
+
+        <!-- stopwatch-->
+        <div id="stopwatch">
+            00:00:00
+        </div>
+
+        <ul id="buttons">
+            <li> <button onclick="startStopwatch()">Start</button></li>
+            <li> <button onclick="stopStopwatch()">Stop</button></li>
+            <li> <button onclick="resetTimer()">Reset</button></li>
+        </ul>
+
         <script src="script.js"></script>
     </body>
 </html>
