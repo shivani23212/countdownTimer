@@ -12,12 +12,18 @@ function toggleMe() {
         timerBox.style.display = "none";
         stopwatchDisplay.style.display = "block";
         stopwatchButtons.style.display = "block";
+        document.getElementById("top").style.backgroundColor = "white";
+        document.getElementById("bottom").style.backgroundColor = "#40e9ff";
+        title.style.color = "#40e9ff";
     }
     else {
         title.innerHTML = "Countdown Timer";
         timerBox.style.display = "block";
         stopwatchDisplay.style.display = "none";
         stopwatchButtons.style.display = "none";
+        document.getElementById("top").style.backgroundColor = "#40e9ff";
+        document.getElementById("bottom").style.backgroundColor = "white";
+        title.style.color = "white";
     }
 }
 
